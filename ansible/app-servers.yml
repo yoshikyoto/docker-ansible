@@ -1,0 +1,4 @@
+# inventory の app-servers に対応するサーバーに実行します
+- hosts: app-servers
+  roles:
+    - nginx

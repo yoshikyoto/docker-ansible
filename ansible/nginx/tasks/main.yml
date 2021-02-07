@@ -1,0 +1,7 @@
+- name: apt を使って nginx をインストールする
+  apt: name=nginx
+
+- name: app.conf をデプロイする
+  template:
+    src: conf.d/ap.conf
+    dest: /etc/nginx/sites-available/default
