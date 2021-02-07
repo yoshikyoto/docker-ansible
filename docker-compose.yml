@@ -1,0 +1,12 @@
+version: "3"
+services:
+  ansible:
+    container_name: ansible
+    image: python:3.8-buster
+    tty: true
+    volumes:
+      - "./ansible:/opt/ansible"
+  target01:
+    container_name: target01
+    build: target
+    tty: true
